@@ -13,7 +13,7 @@ let business = {
     reviewCount: 90
 };
 
-new Business extends React.Component {
+class Business extends React.Component {
     render() {
         return (
             <div className="Business">
@@ -28,7 +28,7 @@ new Business extends React.Component {
                         <p>{business.state}{business.zipCode}</p>
                     </div>
                     <div className="Business-reviews">
-                        <h3>{bsiness.category}</h3>
+                        <h3>{business.category}</h3>
                         <h3 className="rating">{business.rating} stars</h3>
                         <p>{business.reviewCount}</p>
                     </div>
